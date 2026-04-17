@@ -1,0 +1,9 @@
+<h2>Загрузка изображения</h2>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Загрузить</button>
+</form>
+<br>
+<h3><a href="{% url 'images:index' %}">Back to main page</a></h3>

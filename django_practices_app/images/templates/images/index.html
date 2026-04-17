@@ -1,0 +1,10 @@
+<h1><a href="{% url 'images:upload' %}">Upload image</a></h1>
+{% if image_list %}
+    <ul>
+    {% for image in image_list %}
+        <li><a href="{% url 'images:detail' image.id %}">{{ image.image_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No images are available.</p>
+{% endif %}

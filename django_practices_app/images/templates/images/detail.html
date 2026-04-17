@@ -1,0 +1,17 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'images/style.css' %}">
+
+<h1>{{ image.image_name }}</h1>
+
+<img src="{{ image.image_url.url }}">
+<br>
+<a href="{{ image.image_url.url }}" download>
+    <button>Скачать</button>
+</a>
+<br>
+<a href="{% url 'images:delete' image.id %}">
+    <button>Удалить</button>
+</a>
+<br>
+<h3><a href="{% url 'images:index' %}">Back to main page</a></h3>
