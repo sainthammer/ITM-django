@@ -14,8 +14,8 @@
 ### 1. Клонировать репозиторий
 
 ```bash
-git clone <your-repo>
-cd <your-repo>
+git clone sainthammer/ITM-django
+cd sainthammer/ITM-django
 ```
 
 ### 2. Создать `.env`
