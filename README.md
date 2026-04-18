@@ -1,7 +1,6 @@
 # Django + PostgreSQL (Docker Compose)
 
-Простой dev-setup для Django-проекта с PostgreSQL в отдельных контейнерах.
-
+Инструкция по запуску и использованию
 ## Стек
 
 - Python 3.13  
@@ -83,9 +82,6 @@ docker compose logs -f web
 Файл логов:
 logs/app.log
 
-## Медиа
-
-http://localhost:8000/media/<filename>
 
 ## Проверка
 
